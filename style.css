@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Lobster&family=Oswald:wght@200..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  background-color: rgb(45, 45, 45);
+  color: white;
+}
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 16px;
+  background-color: rgba(92, 92, 92, 0.67);
+  backdrop-filter: blur(10px);
+  border: solid black;
+  -webkit-backdrop-filter: blur(10px);
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+}
+.home img {
+  display: flex;
+  justify-content: start;
+  width: 200px;
+  height: 200px;
+  border-radius: 30px;
+  border: solid black;
+  object-fit: cover;
+}
+.home h1 {
+  display: flex;
+  align-items: center;
+  text-decoration: overline;
+  font-size: 80px;
+}
+.home nav {
+  display: flex;
+  align-items: center;
+}
+.home nav ul {
+  display: flex;
+  gap: 4rem;
+  list-style-type: square;
+  color: rgb(255, 248, 150);
+}
+.home nav ul a {
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(150, 150, 150);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.home nav ul a:hover {
+  color: rgb(141, 165, 169);
+  text-decoration: underline;
+}
+
+main {
+  font-family: "Handlee", cursive;
+}
+main .hero {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+  gap: 2rem;
+}
+main .hero .hero__img {
+  border: solid rgb(179, 179, 179);
+  border-radius: 30px;
+  height: 410px;
+  background-color: rgb(143, 152, 169);
+}
+main .hero .hero__img img {
+  border-radius: 30px;
+  border: solid black;
+}
+main .hero .hero__text h3 {
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  color: rgb(133, 166, 196);
+  font-size: 40px;
+}
+main .hero .hero__text p {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+main .main-content {
+  border: solid black;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 600px;
+  font-family: "Handlee", cursive;
+}
+main .main-content .main-content__text h3 {
+  display: flex;
+  justify-content: center;
+  top: 0;
+  text-decoration: underline;
+  font-size: 30px;
+  color: rgb(133, 166, 196);
+}
+main .main-content .main-content__text p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+main .main-content .main-content__img img {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 200px;
+  height: 200px;
+}
+
+/*# sourceMappingURL=style.css.map */
